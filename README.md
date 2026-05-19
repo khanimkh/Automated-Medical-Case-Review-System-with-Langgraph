@@ -69,8 +69,3 @@ The CSV file should have the following columns:
   4. Feedback loop for high-risk cases
 - The frontend allows file upload and synthetic data download.
 
-## Example CSV
-See `data/synthetic_cases.csv` (generated after first run) or use the web interface to download.
-
-## License
-This project is for educational and demonstration purposes only.
