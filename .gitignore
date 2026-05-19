@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.env
+.env.*
+
+# Jupyter and notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code and IDE files
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and coverage
+*.log
+htmlcov/
+.coverage
+coverage.xml
+
+# Data outputs
+*.sqlite3
+*.db
+*.csv
+!data/synthetic_cases.csv
+
+# Docker
+*.pid
+
+# Test outputs
+pytest_cache/
+
+# Ignore secrets
+secrets.env

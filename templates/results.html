@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Medical Case Review Results</h1>
+    <a href="/">&larr; Back to Home</a>
+    <table class="results-table">
+        <thead>
+            <tr>
+                <th>Summary</th>
+                <th>Risk Level</th>
+                <th>Recommendations</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for r in results %}
+            <tr>
+                <td style="max-width: 350px; white-space: pre-line; word-break: break-word;">{{ r.summary }}</td>
+                <td style="text-align: center; font-weight: bold;">{{ r.risk_level }}</td>
+                <td style="max-width: 350px; white-space: pre-line; word-break: break-word;">{{ r.recommendations }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automated Medical Case Review System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Medical Case Review</h1>
+    <p style="max-width:600px; background:#eef; padding:10px; border-radius:6px;">Upload a CSV file containing medical cases, then click <b>Review Cases</b>. The system will analyze your data and display an automated review of each case, highlighting important findings and recommendations.</p>
+        <form id="reviewForm" action="/review" method="post" enctype="multipart/form-data">
+                <label for="file">Upload CSV of medical cases:</label>
+                <input type="file" id="file" name="file" accept=".csv" required>
+                <button id="reviewBtn" type="submit">Review Cases</button>
+        </form>
+        <script>
+            document.getElementById('reviewForm').addEventListener('submit', function() {
+                var btn = document.getElementById('reviewBtn');
+                btn.disabled = true;
+                btn.textContent = 'Working...';
+            });
+        </script>
+    <hr>
+    <h2>Default Data</h2>
+    <p>You can use the default synthetic data in the <code>data/synthetic_cases.csv</code> file, or upload your own CSV above.</p>
+</body>
+</html>

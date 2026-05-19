@@ -1,0 +1,30 @@
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Ignore data outputs and logs
+*.log
+data/
+!data/synthetic_cases.csv
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/project files
+.vscode/
+.idea/
+*.swp
+*.bak
+
+# Ignore test outputs
+htmlcov/
+.coverage
+coverage.xml
+*.egg-info/
+dist/
+build/

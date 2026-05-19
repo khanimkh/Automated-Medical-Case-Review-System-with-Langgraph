@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+jinja2
+pandas
+faker
+langgraph
+langchain-openai
+langchain-core
+pydantic
+IPython
+python-multipart
+
+python-dotenv
